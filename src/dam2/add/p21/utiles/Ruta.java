@@ -1,9 +1,9 @@
 package dam2.add.p21.utiles;
 
 public class Ruta {
-	
+//   C:/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ADD_P2.1_ENRIQUE_NAVARRO_ABELLAN2/WEB-INF/classes/dam2/add/p21/properties/	
 //	"C:/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/ADD_P2.1_ENRIQUE_NAVARRO_ABELLAN2/properties/
-	public static String WEB_CONTENT; 
+	public static String RUTA; 
 	public static String FICHERO_BBDD; 
 	public static String FICHERO_CONF; 
 	public static String FICHERO_LOG4; 
@@ -20,9 +20,9 @@ public class Ruta {
 //		return WEB_CONTENT;
 //	}
 	public static void setRutaReal(String ruta) {
-		WEB_CONTENT = ruta; //La capturo desde el index.jsp
-		FICHERO_BBDD = WEB_CONTENT + "/properties/bbdd.properties"; 
-		FICHERO_CONF = WEB_CONTENT + "/properties/config.properties"; 
-		FICHERO_LOG4 = WEB_CONTENT + "/properties/log4j.properties";
+		RUTA = ruta + "/WEB-INF/classes/dam2/add/p21"; //La capturo desde el index.jsp
+		FICHERO_BBDD = RUTA + "/properties/bbdd.properties"; 
+		FICHERO_CONF = RUTA + "/properties/config.properties"; 
+		FICHERO_LOG4 = RUTA + "/properties/log4j.properties";
 	}
 }
